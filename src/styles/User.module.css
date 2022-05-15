@@ -1,0 +1,114 @@
+.userContainer {
+    min-height: 65vh;
+}
+
+.sectionWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.userDataWrapper {
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+.userInfo {
+    font-family: var(--main--font);
+    color: var(--theme--color);
+    font-size: 1rem;
+}
+
+.logOutBtn {
+    all: unset;
+    font-family: var(--main--font);
+    font-weight: bolder;
+    color: var(--theme--color);
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.logOutBtn:hover {
+    cursor: pointer;
+}
+
+.cardContainer {
+    background-color: var(--theme--color);
+    width: 270px;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+    padding-bottom: 1.3rem;
+}
+
+.listTitleWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+.listTitle {
+    font-family: var(--main--font);
+    color: var(--light--color);
+    font-size: 1.2rem;
+    line-height: 0.7;
+    padding-right: 0.2rem;
+}
+
+.removeBtn:hover, .bookTitle:hover {
+    cursor: pointer;
+}
+
+.booksImg {
+    height: 25px;
+}
+
+@media (min-width: 768px) {
+    .userDataWrapper {
+        padding-left: 1.5rem;
+        padding-top: 2.5rem;
+    }
+
+    .userInfo {
+        font-size: 1.2rem;
+    }
+
+    .deleteAccBtn {
+        font-size: 0.80rem;
+        padding-right: 0.7rem;
+        padding-top: 0.5rem;
+    }
+
+    .cardContainer {
+        width: 450px;
+        padding-bottom: 2.5rem;
+    }
+
+    .listTitleWrapper {
+        padding-top: 2.7rem;
+    }
+
+    .listTitle {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .userDataWrapper {
+        padding-left: 5rem;
+        padding-top: 5rem;
+    }
+    .bookListsContainer {
+        display: flex;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .cardContainer {
+        width: 390px;
+
+    }
+}

@@ -1,0 +1,82 @@
+.createAccContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light--color);
+    height: 80vh;
+}
+
+.formWrapper {
+    width: 20rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formHeader {
+    padding: 1rem;
+    font-family: var(--main--font);
+    color: var(--theme--color);
+    font-size: 1.3rem;
+}
+
+.input {
+    background-color: var(--light--color);
+    border: 3px solid var(--theme--color);
+    border-radius: 10px;
+	padding: 0.9rem 0.9rem;
+	margin: 0.5rem 0;
+	width: 80%;
+}
+
+.input:focus {
+    outline: none;
+    border: 8px solid var(--theme--color);
+}
+
+.createBtn {
+    background-color: var(--theme--color);
+    border: none;
+    border-radius: 20px;
+	cursor: pointer;
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	padding: 0.9rem 3rem;
+    text-transform: uppercase;
+    color: var(--light--color);
+    margin: 1rem;
+}
+
+/* .createBtn:hover {
+    background-color: var(--dark--color);
+} */
+
+
+@media (min-width: 768px) {
+    .createAccContainer {
+        height: 70vh;
+    }
+
+    .formHeader {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .formWrapper {
+        width: 30rem;
+        border-radius: 10px;
+    }
+
+    .input {
+        font-size: 1.3rem;
+    }
+
+    .createBtn {
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+        padding: 1.1rem 3rem;
+        margin: 2rem;
+    }
+}

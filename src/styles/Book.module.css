@@ -1,0 +1,141 @@
+.bookPageContainer {
+    background-color: var(--light--color);
+}
+
+.bookContainer {
+    min-height: 65vh;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.bookCoverWrapper {
+    width: 320px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.contentWrapper {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.bookImg {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.InfoWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.7rem;
+}
+
+.aboutWrapper {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.detailsWrapper {
+    padding-left: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.4rem;
+}
+
+
+/* Text Styling */
+.heading {
+    font-family: var(--main--font);
+    color: var(--theme--color);
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+}
+
+.smallHeading {
+    font-family: var(--main--font);
+    color: var(--theme--color);
+    font-size: 1.1rem;
+    padding-bottom: 0.7rem;
+    padding-top: 1.5rem;
+}
+
+.text {
+    font-family: var(--main--font);
+    color: var(--dark--color);
+    line-height: 1.7rem;
+}
+
+.aboutText {
+    font-family: var(--main--font);
+    color: var(--dark--color);
+    line-height: 1.2rem;
+}
+
+.userActionWrapper {
+    padding-bottom: 3rem;
+}
+
+.btnWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.libraryMsg, .ratingMsg {
+    font-size: 1.1rem;
+    color: var(--gray--color);
+    margin-top: 1.4rem;
+}
+
+.libraryBtn {
+    background-color: var(--theme--color);
+    border: none;
+    border-radius: 10px;
+	cursor: pointer;
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	padding: 0.6rem 0.7rem;
+    text-transform: uppercase;
+    color: var(--light--color);
+    margin-top: 0.7rem;
+}
+
+@media (min-width: 768px) {
+    .bookContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contentWrapper {
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .bookCoverWrapper {
+        min-width: 400px;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    /* Text Styling */
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    .smallHeading {
+        font-size: 1.3rem;
+    }
+
+    .text {
+        line-height: 1.8rem;
+    }
+
+    .aboutText {
+
+        line-height: 1.3rem;
+    }
+}

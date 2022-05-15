@@ -1,0 +1,136 @@
+.adminContainer {
+    min-height: 65vh;
+    background-color: var(--light--color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.formsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formWrapper {
+    width: 20rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formHeader {
+    padding: 0.9rem;
+    font-family: var(--main--font);
+    color: var(--theme--color);
+    font-size: 1.3rem;
+}
+
+.input {
+    background-color: var(--light--color);
+    border: 3px solid var(--theme--color);
+    border-radius: 10px;
+	padding: 0.5rem 0.4rem;
+	margin: 0.5rem 0;
+    width: 80%;
+    font-family: var(--main--font);
+    font-size: 0.9rem;
+    color: var(--gray--color);
+}
+/* Styling for upload img*/
+.uploadImgWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.uploadButton {
+    background-color: var(--theme--color);
+    border: none;
+    border-radius: 20px;
+	cursor: pointer;
+	font-size: 0.8rem;
+	font-weight: bold;
+    /* letter-spacing: 0.1rem; */
+    padding: 0.4rem 0.7rem;
+    margin: 0.5rem 0rem;
+    text-transform: uppercase;
+    color: var(--light--color);
+}
+
+.fileUpload {
+    display: none;
+}
+
+.filenameWrapper {
+    background-color: var(--light--color);
+    border: 3px solid var(--theme--color);
+    border-radius: 10px;
+	padding: 0.5rem 0.4rem;
+    margin: 0.5rem 0;
+    width: 110px;
+    font-family: var(--main--font);
+    font-size: 0.9rem;
+    color: var(--gray--color);
+}
+
+.actionBtn {
+    background-color: var(--theme--color);
+    border: none;
+    border-radius: 20px;
+	cursor: pointer;
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	padding: 0.4rem 1.5rem;
+    text-transform: uppercase;
+    color: var(--light--color);
+    margin: 1rem;
+}
+
+.fileName {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.adminMsg {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: var(--gray--color);
+}
+
+@media (min-width: 768px) {
+
+    .formsWrapper {
+        flex-direction: row;
+    }
+
+    .formHeader {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .formWrapper {
+        width: 30rem;
+        border-radius: 10px;
+    }
+
+    .filenameWrapper {
+        width: 200px;
+    }
+
+    .input {
+        font-size: 1.3rem;
+    }
+
+    .actionBtn {
+        font-size: 1.1rem;
+        letter-spacing: 0.15rem;
+	    padding: 0.6rem 1.7rem;
+    }
+}
