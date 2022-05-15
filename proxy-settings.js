@@ -8,7 +8,7 @@ module.exports = {
   pathToAPI: './api/index',
   // the host for your backend api 
   // set to another machine if your api is not local  
-  hostForAPI: 'localhost',
+  hostForAPI: 'https://benevolent-cocada-cb8a28.netlify.app/',
   // the ports
   ports: {
     // where you want to run the 'joint' proxied server
